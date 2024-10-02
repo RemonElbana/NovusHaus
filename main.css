@@ -308,7 +308,7 @@ header {
 }
 @keyframes scrollMoveFromRight {
     from {
-        transform: translateX(2000px);
+        transform: translateX(100%);
         opacity: 0;
     }
     to {
@@ -318,7 +318,7 @@ header {
 }
 @keyframes scrollMoveFromLeft {
     from {
-        transform: translateX(-2000px);
+        transform: translateX(-100%);
         opacity: 0;
     }
     to {
