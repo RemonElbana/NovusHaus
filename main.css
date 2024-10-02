@@ -28,6 +28,7 @@ header {
             margin-inline: auto;
             padding: 32px 16px;
             justify-content: space-between;
+            z-index: 5;
             .logo {
                 font-size: 29px;
                 font-weight: 800    ;
@@ -83,7 +84,6 @@ header {
             padding: 80px 16px;
             position: relative;
             h1 {
-                /* position: absolute; */
                 font-size: 80px;
                 transition: all 1.2s ease-in-out;
                 @starting-style {
