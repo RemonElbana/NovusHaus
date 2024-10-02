@@ -293,7 +293,7 @@ header {
     .right {
         position: relative;
         animation: scrollMoveFromRight ease-out 1s ;
-        animation-timeline: view(1100px -200px);
+        animation-timeline: view(1100px 10px);
         .dot {
             position: absolute;
             z-index: -10;
@@ -308,7 +308,7 @@ header {
 }
 @keyframes scrollMoveFromRight {
     from {
-        transform: translateX(100%);
+        transform: translateX(140%);
         opacity: 0;
     }
     to {
@@ -318,7 +318,7 @@ header {
 }
 @keyframes scrollMoveFromLeft {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-140%);
         opacity: 0;
     }
     to {
@@ -372,6 +372,8 @@ header {
         display: flex;
         justify-content: left;
         align-items: center;
+        animation: scrollMoveFromLeft ease-out 5s ;
+        animation-timeline: view(1100px 10px);
         .specialBox {
             max-width: 400px;
             margin-left: 20px;
@@ -398,6 +400,8 @@ header {
         display: flex;
         justify-content: right;
         align-items: center;
+        animation: scrollMoveFromRight ease-out 5s ;
+        animation-timeline: view(1100px 10px);
     }
 }
 @media (max-width:1000px) {
@@ -580,7 +584,6 @@ header {
         }
         p {
             font-size: 20px;
-            font-weight: 100 ;
             margin-bottom: 20px;
             color: rgb(141, 141, 141);
         }
