@@ -10,7 +10,7 @@
 .container {
     position: relative;
     margin-inline: auto;
-    overflow: hidden;
+    overflow: clip;
 }
 
 
@@ -260,6 +260,8 @@ header {
     margin-bottom: 50px;
     .left {
         margin-right: 20px;
+        animation: scrollMoveFromLeft ease-out 1s ;
+        animation-timeline: view(1100px 1px);
         h1 {
             font-size: 45px;
             padding-bottom: 15px;
@@ -290,17 +292,38 @@ header {
     }
     .right {
         position: relative;
+        animation: scrollMoveFromRight ease-out 1s ;
+        animation-timeline: view(1100px 1px);
         .dot {
             position: absolute;
             z-index: -10;
             top: -60px;
             left: -80px;
             opacity: 0.5;
-            /* filter: grayscale(0.5); */
         }
         .choose {
             border-radius: 15px;
         }
+    }
+}
+@keyframes scrollMoveFromRight {
+    from {
+        transform: translateX(2000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes scrollMoveFromLeft {
+    from {
+        transform: translateX(-2000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 @media (max-width:1150px) {
@@ -512,6 +535,8 @@ header {
         width: 40%;
         padding-right: 20px;
         margin: 20px;
+        animation: scrollMoveFromLeft ease-out 1s ;
+        animation-timeline: view(800px 1px);
         img {
             box-shadow: 3px 3px 10px rgb(206, 206, 206);
         }
@@ -546,6 +571,8 @@ header {
         width: 60%;
         margin-left: 20px;
         padding: 10px 0;
+        animation: scrollMoveFromRight ease-out 1s ;
+        animation-timeline: view(800px 1px);
         h1 {
             font-size: 45px;
             margin-bottom: 20px;
