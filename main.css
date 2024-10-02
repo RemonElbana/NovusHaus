@@ -293,7 +293,7 @@ header {
     .right {
         position: relative;
         animation: scrollMoveFromRight ease-out 1s ;
-        animation-timeline: view(1100px 1px);
+        animation-timeline: view(1100px -200px);
         .dot {
             position: absolute;
             z-index: -10;
@@ -536,7 +536,7 @@ header {
         padding-right: 20px;
         margin: 20px;
         animation: scrollMoveFromLeft ease-out 1s ;
-        animation-timeline: view(800px 1px);
+        animation-timeline: view(800px -50px);
         img {
             box-shadow: 3px 3px 10px rgb(206, 206, 206);
         }
