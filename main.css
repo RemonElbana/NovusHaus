@@ -81,14 +81,26 @@ header {
             gap: 40px;
             text-align: center;
             padding: 80px 16px;
+            position: relative;
             h1 {
+                /* position: absolute; */
                 font-size: 80px;
+                transition: all 1.2s ease-in-out;
+                @starting-style {
+                    opacity: 0;
+                    transform: translateX(-1000px);
+                }
             }
             p {
                 font-size: 23px;
                 width: 46%;
                 margin-inline: auto;
                 padding-bottom: 20px;
+                transition: all 1.2s ease-in-out;
+                @starting-style {
+                    opacity: 0;
+                    transform: translateX(1000px);
+                }
             }
             #search {
                 padding: 20px 15px;
