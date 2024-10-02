@@ -43,6 +43,7 @@ header {
                     position: relative;
                     a {
                         text-decoration: none;
+                        color: white;
                     }
                     a:visited {
                         color: white;
@@ -106,16 +107,6 @@ header {
                 color: white;
                 font-size: 16px;
             }
-            /* #search::after {
-                content: '\f1ea';
-                font-family: "font awesome 5 free";
-                font-weight: 900;
-                position: absolute;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-color: red;
-            } */
             #search:focus {
                 outline: none;
             }
@@ -191,16 +182,36 @@ header {
         .content {
             width: 80% !important;
             .top {
-                padding: 32px 0;
-                width: 115%;
+                padding: 32px 20px;
+                width: 125%;
                 left: 50%;
                 transform: translateX(-50%);
                 position: relative;
+                background-color: black;
                 ul {
                     display: none;
                 }
-                .div {
+                .drop {
                     display: block;
+                }
+                .drop:hover {
+                    .specialUl {
+                        padding-top: 20px;
+                        width: 110%;
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 65px;
+                        text-align: center;
+                        background-color: #000000d2;
+                        li {
+                            margin-bottom: 30px;
+                        }
+                        li:hover::before {
+                            width: 20%;
+                        }
+                    }
                 }
                 div {
                     .right {
